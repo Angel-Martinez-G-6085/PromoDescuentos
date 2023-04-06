@@ -1,0 +1,17 @@
+<p>products-mercado works!</p>
+
+<div class="container mx-auto mt-5 text-justify">
+    <div class="flex flex-wrap">
+        <div class="m-10 w-60 h-23 rounded-lg max-w-sm  overflow-hidden shadow-lg" *ngFor="let product of Aproducts">
+            <img class="w-auto " src="{{product.thumbnail}}" alt="{{product.id}}">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">{{product.title}}</div>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <a href="{{product.permalink}}"><button class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Ir</button></a>
+                <a href="https://www.mercadolibre.com.mx/noindex/catalog/reviews/{{product.id}}"><button class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Comentarios</button></a>
+            </div>
+        </div>
+    </div>
+
+</div>
